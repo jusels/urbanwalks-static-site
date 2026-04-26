@@ -435,31 +435,33 @@ video {
 }
 
 .gallery {
-    max-width: 920px;
-    margin: 0 auto;
+  max-width: 920px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .gallery-row {
-    display: flex;
-    gap: 16px;
-    margin-bottom: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
 }
 
 .gallery-row img {
-    flex: 1 1 0;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 12px;
+  display: block;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 .row1 img {
-    height: 340px;
+  height: 340px;
 }
 
 .row2 img {
-    height: 180px;
+  height: 180px;
 }
 
 .route-box {
