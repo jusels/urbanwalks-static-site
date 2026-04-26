@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>UrbanWalks – Discover Beautiful Walking Routes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+<body>
+    <a href="#homePanel" class="skip-link" id="skipToContent">Skip to main content</a>
+    <div class="wrapper"></div>
+    <header id="header">
+        <div class="logo-circle">
+            <span class="icon">
+                <img src="images/logo-transparent.png" alt="UrbanWalks icon">
+            </span>
+        </div>
+        <div class="content">
+            <div class="inner">
+                <h1>UrbanWalks</h1>
+                <p class="tagline">Discover Beautiful Walking Routes</p>
+            </div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#" data-open="homePanel">About Us</a></li>
+                <li><a href="routes.html">Routes</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="rate.html">Rate a Street</a></li>
+            </ul>
+        </nav>
+
+        <button id="accessibilityToggle" type="button">High contrast / Large text</button>
+    </header>
+
+    <main id="main-content">
+        <section id="homePanel" class="panel" tabindex="-1">
+            <button id="closePage" class="close-btn">&times;</button>
+            <h2>Discover Beautiful Walking Routes</h2>
+            <figure class="image main">
+                <img src="images/index_image_1.jpg" alt="Narrow cobblestone street lined with old brick buildings" class="clickable-image">
+            </figure>
+
+            <article>
+                <h3>About the UrbanWalks Project</h3>
+                <p>
+                    Cities are full of beautiful streets, historic buildings, and green parks that are perfect for walking.
+                    However, most navigation tools focus only on speed and efficiency, often ignoring the visual and emotional experience of moving through a city.
+                    <strong>UrbanWalks</strong> helps people find routes that are not only practical, but also enjoyable and visually inspiring.
+                </p>
+
+                <p>
+                    Walking allows people to notice architectural details, street life, and natural elements that are often missed when using faster forms of transportation.
+                    From decorative facades and hidden courtyards to tree-lined streets and quiet residential areas, cities offer a rich variety of spaces that can transform a simple walk into a memorable experience.
+                </p>
+
+                <p>
+                    <strong>UrbanWalks</strong> focuses on highlighting these overlooked places.
+                    Instead of guiding users through the busiest or most touristic areas, the platform introduces routes that reflect the character and atmosphere of different neighborhoods.
+                    This includes:
+                </p>
+
+                <ul>
+                    <li><strong>Historic buildings</strong> and decorative facades</li>
+                    <li><strong>Quiet streets</strong> away from heavy traffic</li>
+                    <li><strong>Green areas</strong> and tree-lined routes</li>
+                    <li><strong>Unique neighborhoods</strong> with local character</li>
+                </ul>
+
+                <p>
+                    The goal of the project is to encourage people to explore their surroundings more consciously.
+                    By choosing routes based on beauty, atmosphere, and comfort, users can experience the city in a slower and more meaningful way.
+                    Whether it is a short daily walk or a longer exploration, UrbanWalks helps turn walking into an enjoyable activity rather than just a way to get from one place to another.
+                </p>
+            </article>
+
+            <aside class="learn-more">
+                <p><strong>Learn more about Budapest:</strong></p>
+                <ul>
+                    <li><a href="https://visithungary.com/discover-budapest" target="_blank" rel="noopener noreferrer">VisitHungary</a></li>
+                    <li><a href="https://www.komoot.com/guide/16615/hiking-in-budapest" target="_blank" rel="noopener noreferrer">Komoot</a></li>
+                    <li><a href="https://www.offbeatbudapest.com/budapest-city-guide/best-architecture-highlights/" target="_blank" rel="noopener noreferrer">OffBeatBudapest</a></li>
+                </ul>
+            </aside>
+
+            <div class="video-wrapper">
+                <iframe
+                        src="https://www.youtube.com/embed/0nPK293bnoQ?start=48"
+                        title="Budapest walking video"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+                        allowfullscreen>
+                </iframe>
+            </div>
+
+            <details class="video-description">
+                <summary>Full text description of the video</summary>
+                <p>The video is a narrated travel guide about Budapest, Hungary. Soft background music plays while an English narrator describes the city. The video contains many changing visual scenes and moving camera shots.</p>
+                <p>At the beginning, an aerial panoramic view shows Budapest divided by the Danube River, with several bridges connecting the two sides of the city. Historic buildings and rooftops are visible in daylight.</p>
+                <p>The next scene shows the Hungarian Parliament Building standing on the riverbank. Boats move on the water in front of it. After that, the video changes to views of Buda Castle and the surrounding historic district on the hill.</p>
+                <p>The Chain Bridge then appears crossing the Danube, with cars and pedestrians moving across it. The narrator continues speaking while the camera shows different angles of the bridge and the riverside.</p>
+                <p>Next, St. Stephen’s Basilica is shown from the front, with tourists walking in the square. This is followed by Fisherman’s Bastion, where visitors stand near the white stone terraces and look over the city panorama.</p>
+                <p>The video then shows everyday life in Budapest streets, including yellow trams, moving cars, people walking on sidewalks, and cafés with outdoor seating. Several close-up shots of historic buildings and monuments are included.</p>
+                <p>Later, the camera shows thermal baths and additional city landmarks while the narrator explains Budapest’s cultural importance and tourism appeal.</p>
+                <p>At the end of the clip, another wide panoramic city view appears, again showing the Danube River, bridges, and the dense historic center. The music continues until the video finishes.</p>
+                <p>Overall, the video combines spoken narration with continuously changing visual footage of Budapest landmarks, transportation, pedestrians, and city landscapes.</p>
+            </details>
+
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01" src="images/logo-transparent.png" alt="Expanded preview image">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 UrbanWalks – Student Project</p>
+        <p>Created by Iuliia Lapan</p>
+    </footer>
+    <div id="panelOverlay" class="panel-overlay"></div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rate a Street – UrbanWalks</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+<body class="subpage panel-open">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div class="wrapper"></div>
+
+    <header id="header">
+        <div class="logo-circle">
+            <span class="icon">
+                <img src="images/logo-transparent.png" alt="UrbanWalks icon">
+            </span>
+        </div>
+        <div class="content">
+            <div class="inner">
+                <h1>UrbanWalks</h1>
+                <p class="tagline">Discover Beautiful Walking Routes</p>
+            </div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="routes.html">Routes</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="#" class="active">Rate a Street</a></li>
+            </ul>
+        </nav>
+
+        <button id="accessibilityToggle" type="button">High contrast / Large text</button>
+    </header>
+
+    <section id="introPanel" class="panel visible-page">
+        <button id="closePage" class="close-btn">&times;</button>
+        <h2> Rate a Street or Walking Area</h2>
+        <p class="rate">Users can share their experiences and help others discover beautiful walking areas by rating streets or locations.</p>
+        <form class="review-form" id="review-form">
+
+            <label for="street">Street / Location Name</label>
+            <input type="text" id="street" name="street" placeholder="e.g. Rottenbiller utca" maxlength="60" size="40">
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" placeholder="e.g. Budapest" maxlength="40" size="30">
+
+            <label>Type of Location</label>
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input type="radio" id="residential" name="location-type" value="residential">
+                    <label for="residential">Residential</label>
+                </div>
+
+                <div class="radio-option">
+                    <input type="radio" id="historic" name="location-type" value="historic">
+                    <label for="historic">Historic district</label>
+                </div>
+
+                <div class="radio-option">
+                    <input type="radio" id="park" name="location-type" value="park">
+                    <label for="park">Park / green area</label>
+                </div>
+
+                <div class="radio-option">
+                    <input type="radio" id="mixed" name="location-type" value="mixed">
+                    <label for="mixed">Mixed urban area</label>
+                </div>
+            </div>
+
+            <label for="beauty">Beauty (1–10)</label>
+            <input type="number" id="beauty" name="beauty" min="1" max="10" placeholder="Enter a score">
+
+            <label for="cleanliness">Cleanliness (1–10)</label>
+            <input type="number" id="cleanliness" name="cleanliness" min="1" max="10" placeholder="Enter a score">
+
+            <label>Noise Level</label>
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input type="radio" id="quiet" name="noise" value="quiet">
+                    <label for="quiet">Quiet</label>
+                </div>
+
+                <div class="radio-option">
+                    <input type="radio" id="moderate" name="noise" value="moderate">
+                    <label for="moderate">Moderate</label>
+                </div>
+
+                <div class="radio-option">
+                    <input type="radio" id="busy" name="noise" value="busy">
+                    <label for="busy">Busy</label>
+                </div>
+            </div>
+
+            <label for="comments">Comments</label>
+            <textarea id="comments" name="comments" rows="4" maxlength="500" placeholder="Describe the atmosphere, architecture, greenery, or anything special about this place"></textarea>
+
+            <fieldset class="checkbox-group">
+                <legend>Features</legend>
+                <label>
+                    <input type="checkbox" name="features" value="photography">
+                    Good for photography
+                </label>
+                <label>
+                    <input type="checkbox" name="features" value="historic-houses">
+                    Historic apartment houses
+                </label>
+                <label>
+                    <input type="checkbox" name="features" value="quiet-street">
+                    Quiet streets
+                </label>
+                <label>
+                    <input type="checkbox" name="features" value="cafes">
+                    Cafés
+                </label>
+            </fieldset>
+
+            <div class="form-buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+            <p id="form-message"></p>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 UrbanWalks – Student Project</p>
+        <p>Created by Iuliia Lapan</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Routes – UrbanWalks Walking Routes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+<body class="subpage panel-open">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div class="wrapper"></div>
+    <header id="header">
+        <div class="logo-circle">
+            <span class="icon">
+                <img src="images/logo-transparent.png" alt="UrbanWalks icon">
+            </span>
+        </div>
+        <div class="content">
+            <div class="inner">
+                <h1>UrbanWalks</h1>
+                <p class="tagline">Discover Beautiful Walking Routes</p>
+            </div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="#" class="active">Routes</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="rate.html">Rate a Street</a></li>
+            </ul>
+        </nav>
+
+        <button id="accessibilityToggle" type="button">High contrast / Large text</button>
+    </header>
+
+    <main id="main-content">
+        <section id="introPanel" class="panel visible-page">
+            <button id="closePage" class="close-btn">&times;</button>
+            <h2>Recommended Walking Routes</h2>
+            <div class="route-box">
+                <article class="route-text">
+                    <h3>Route 1 – Terézváros Architecture Walk (District VI)</h3>
+                    <p>This route explores the quieter residential streets of Terézváros, an area known for its elegant late-19th-century apartment buildings and ornate facades.
+                        Walking along streets such as Eötvös utca, Szondi utca, and Aradi utca, visitors can observe beautiful balconies, decorative entrances, and historic courtyards.
+                        The area also contains several small cafés and local bakeries that make it a pleasant place to take a break during a walk.</p>
+                </article>
+                <figure class="route-image">
+                    <img src="images/route_1.jpg" alt="Ornate building facade with two sculpted female figures beside tall windows" class="clickable-image">
+                </figure>
+            </div>
+
+            <div class="route-box">
+                <article class="route-text">
+                    <h3>Route 2 – Diplomatic Quarter Garden Walk (District VI–XIV)</h3>
+                    <p>This route leads through the peaceful Diplomatic Quarter, where many embassies and historic villas are located.
+                        Streets such as Benczúr utca and Délibáb utca are lined with trees and impressive buildings from the late 19th and early 20th centuries.
+                        The area has a calm atmosphere and wide sidewalks, making it ideal for a relaxing walk away from busy tourist areas.</p>
+                </article>
+                <figure class="route-image">
+                    <img src="images/route_2.png" alt="Historic building on a Budapest street with parked bicycles in front" class="clickable-image">
+                </figure>
+            </div>
+            <div class="route-box">
+                <article class="route-text">
+                    <h3>Route 3 – Inner Erzsébetváros Courtyard Walk (District VII)</h3>
+                    <p>This walk focuses on the historic inner courtyards and unique architectural details of Erzsébetváros.
+                        Many buildings in this district hide beautiful inner courtyards behind their street facades.
+                        Walking along Kazinczy utca, Dob utca, and nearby streets, visitors can discover hidden passages, colorful street art, and historic apartment houses that reflect the diverse cultural history of the area.</p>
+                </article>
+                <figure class="route-image">
+                    <img src="images/route_3.jpg" alt="Colorful painted doorway on a Budapest building facade" class="clickable-image">
+                </figure>
+            </div>
+
+            <table>
+                <caption>
+                    <details>
+                        <summary>Routes comparison table</summary>
+                        This table compares different walks by district, distance, difficulty, and features.
+                    </details>
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th>Route</th>
+                        <th>District</th>
+                        <th>Distance</th>
+                        <th>Difficulty</th>
+                        <th>Features</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Route">Terézváros Architecture Walk</td>
+                        <td data-label="District">District VI</td>
+                        <td data-label="Distance">1.8 km</td>
+                        <td data-label="Difficulty">Easy</td>
+                        <td data-label="Features">Historic apartment houses, quiet streets, cafés</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Route">Diplomatic Quarter Garden Walk</td>
+                        <td data-label="District">District VI–XIV</td>
+                        <td data-label="Distance">2.2 km</td>
+                        <td data-label="Difficulty">Easy</td>
+                        <td data-label="Features">Villas, embassies, tree-lined streets</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Route">Inner Erzsébetváros Courtyard Walk</td>
+                        <td data-label="District">District VII</td>
+                        <td data-label="Distance">1.5 km</td>
+                        <td data-label="Difficulty">Easy</td>
+                        <td data-label="Features">Hidden courtyards, street art, historic buildings</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01" src="images/logo-transparent.png" alt="Expanded preview image">
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <p>© 2026 UrbanWalks – Student Project</p>
+        <p>Created by Iuliia Lapan</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
